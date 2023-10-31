@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <h1>Primer documento</h1> 
+    
+    <div id="resultado"></div>
+    <h6>Último documento</h6>
+    
+    
+    
+    
+    
+    <script>
+        console.log(window);
+
+
+        const PI = 3.14;
+        console.log(PI);
+        // y = 2;
+        // console.log(y);
+        // y = 3;
+        // console.log(y);
+
+
+
+        // String.
+        /*
+        * esto es una variable
+        */
+        let nombre = "Juanca  ";
+        let apellido = "Castillo";
+        let saludo = new String('Hola mundo');
+
+        console.log(
+            nombre,
+            apellido,
+            saludo
+            );
+
+
+        // Numbers.
+        let x = 9;
+        let y = 2;
+        let w = new Number(159);
+        console.log(w)
+        console.log(x + y);
+        
+        let z = '7.19';
+        console.log(x + y + z);
+        console.log(z - y);
+        
+        // Multi = *
+        console.log(z * y);
+        
+        // División "/"
+        console.log(x / y);
+        
+        // residuo sobrante faltante %
+        console.log(x % y);
+        
+        
+        console.log(x + y + parseInt(z));
+        console.log(x + y + parseFloat(z));
+
+
+
+        // Boolean.
+        let verdadero = true;
+        let falso = false;
+        let nuevoVerdadero = new Boolean(0); // false
+        let nuevoVerdadero2 = new Boolean(1); // true
+
+        if (falso == false)  {
+            console.log(' Todo No ok');
+        }
+
+        // Undefined - Null 
+
+        var nullable;
+        var noDefinida;
+
+        nullable = null
+        console.log(noDefinida)
+        console.log(nullable)
+        
+        nullable = "Seré algo";
+
+        if (nullable == null) {
+            console.log(' Todo ok');
+        } else {
+            console.log(' Todo No ');
+        }
+
+
+        // NaN. 
+        // Not a number
+        if (isNaN('3.14')) {
+            console.log('No eres un número');
+        } else {
+            console.log('Si eres un número');
+        }
+
+        var uno = 'Hola';
+        {
+            var uno = 'adios';
+        }
+
+        console.log(uno);
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>
