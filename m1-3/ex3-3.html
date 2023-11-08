@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="number" name="numUno" id="numUno" placeholder="Escriba un número">
+    <input type="number" name="numDos" id="numDos" placeholder="Escriba un número">
+    <input type="number" name="numTres" id="numTres" placeholder="Escriba un número">
+    <input type="button" value="Click me" onclick="promedio()">
+
+    <div id="resultado"></div>
+
+    <script>
+
+        function promedio() {
+            let numUno = parseFloat( document.getElementById("numUno").value );
+            let numDos = parseFloat( document.getElementById("numDos").value );
+            let numTres = parseFloat(document.getElementById('numTres').value );
+
+            const numeroNotas = 3 
+
+            let result = (numUno + numDos + numTres) / numeroNotas; 
+
+            console.log(result.toFixed(4));
+
+            document.getElementById("resultado").innerHTML = "El resultado de las notas de " + numUno  + ', ' + numDos + ', ' + numTres + " es igual a " + result.toFixed(4) + ". "
+        }
+
+
+    </script>
+</body>
+</html>

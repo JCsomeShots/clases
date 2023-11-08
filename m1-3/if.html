@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let horaOficialDelPais = 17; 
+        let cambioANoche = 18;
+
+        if (horaOficialDelPais == cambioANoche) {
+            console.log('Sunset')
+        } else if (horaOficialDelPais >= 18) {
+            console.log('Es de dia')
+        } else {
+            console.log('Es de noche');
+        }
+
+
+        let edat = 18;
+
+        if (edat < 18 ) {
+            console.log('Eres menor de edad')
+        } else {
+            console.log('Eres mayor de edad')
+        }
+
+
+
+        let permiso = true;
+        let edad = 15;
+
+        "&&";
+
+        if (permiso == true ) {
+            if(edad >= 16) {
+                if (hora < 18) {
+
+                    console.log('puedes conducir un ciclomotor')
+
+                }
+            }
+        }
+
+        "&&" = AND
+        if (permiso == true && edad >= 16) {
+            console.log('puedes conducir un ciclomotor');
+        } else {
+            console.log('Te falta un año para que puedas conducir un ciclomotor');
+        }
+
+        let acompanyante = false;
+        "||" = or
+
+        if ( permiso || acompanyante ) {
+            console.log('puedes conducir un coche');
+        }
+
+        //if (permiso == false) {
+        if (permiso != true) {
+        //if ( !permiso ){
+            console.log('No puedes conducir un coche');
+        }
+
+
+
+
+
+
+
+
+
+        let patata = true
+        let huevo = true
+        let ceba = false
+        let sal = false 
+
+        if (patata == true && huevo == true ) {
+            if (ceba == true && sal == true){
+                console.log('Tortilla fantástica');
+            } else if (ceba == true) {
+                console.log('Tortilla con ceba');
+            } else if (sal == true) {
+                console.log('Tortilla con sal');
+            } else  {
+                console.log('Tortilla básica');
+            }
+        } else if (patata == true && huevo == false){
+            console.log('Tortilla Vegana');
+        } else if (patata == false && huevo == true){
+            console.log('Tortilla Francesa');
+        } else {
+            console.log('Eso que es¿?');
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

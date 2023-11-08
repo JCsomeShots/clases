@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="valor-edad">
+        <label for="edat">Cuál es su edad?</label>
+        <input type="number" name="edat" id="edat">
+    </div>
+    <div>
+        <label for="universitario">¿Tienen título universitario?
+            <input type="checkbox" name="universitario" id="universitario">
+        </label>
+
+    </div>
+    <div>
+        <label for="atur">¿Está en el paro?
+            <input type="checkbox" name="atur" id="atur">
+        </label>
+    </div>
+    <input type="button" value="Calcula tu beca" onclick="calcularBeca2()">
+    
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

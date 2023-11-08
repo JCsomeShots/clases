@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{! <style>
+        .caja {
+            background-color: red;
+        }
+    </style> }}
+</head>
+<body>
+
+    <h1>Clase 2</h1>
+
+
+    <p id="parrafo"> Esto es un párrafo</p>
+    <div id="result">Hola</div>
+
+    <div id="caja" class="caja" style="width: 50px; height: 50px;"></div>
+    <input type="button" value="click" onclick="changeColor()">
+    <br>
+
+
+
+    <script>
+
+
+        let asignatura;
+        asignatura = 'Javascript';
+        asignatura = 'python';
+        let _camion 
+        let $avion
+        // let 123estoNO;
+
+        // console.log();
+        // window.alert();
+        // document.write();
+
+        // let nombre = prompt('Cuál es tu nombre?');
+        // let apellido = prompt(`Cuál es tu apellido?`);
+        // let edad = prompt('Cual es tu edad?');
+        // let mensaje = `Mi nombre es ${nombre} ${apellido}, y tengo ${edad} años`
+        // console.log(mensaje);
+        // alert(nombre,apellido,edad);
+        // document.getElementById('result').innerHTML = mensaje;
+
+        // let numOne = prompt('Escriba un número');
+        // let numTwo = prompt('Escriba otro número');
+
+        // let result = document.getElementById('result');
+
+        let suma = parseInt(numOne) + parseInt(numTwo);
+        let resta = parseInt(numOne) - parseInt(numTwo);
+        let multi = parseInt(numOne) * parseInt(numTwo);
+        let divi = parseInt(numOne) / parseInt(numTwo);
+        let residuo = parseInt(numOne) % parseInt(numTwo);
+
+        let mensaje = `
+                El resultado de la suma es : ${suma}   <br>
+                El resultado de la resta es : ${resta}   <br>
+                El resultado de la multiplicación es : ${multi}   <br>
+                El resultado de la división es : ${divi}  <br>
+                El resultado de la residuo es : ${residuo}  
+                `
+        
+        document.getElementById('result').innerHTML = mensaje;
+
+        let parrafo = document.getElementById('parrafo').value
+        console.log(parrafo)
+
+
+        function changeColor(){
+            let caja = document.getElementById('caja');
+            caja.style.backgroundColor = 'blue';
+        }
+
+
+    </script>
+</body>
+</html>
