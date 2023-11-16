@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num = 0;
+            num = num + 1;
+            console.log(num) // 1
+            num++
+            console.log(num) // 2
+            num = num + 2
+            console.log(num) // 4
+            num-- 
+            console.log(num) // 3
+            num = num - 1
+            console.log(num) // 2
+            
+
+        let text = 'Bon ';
+            text += 'dia'
+            console.log(text)
+
+
+        const newArray = []
+        console.log(newArray);
+
+        const listStudent = ['Silvia', 'Oriol', 'Kevin']
+        console.log(listStudent)
+        console.log(listStudent[0])
+        console.log(listStudent[1])
+        console.log(listStudent[2])
+        console.log(listStudent.length)
+        console.log(listStudent[listStudent.length])
+        console.log(listStudent[listStudent.length - 1])
+        listStudent.push('Gustavo')
+        console.log(listStudent)
+        
+        /*  const numConst = 5;
+        numConst = 9;
+        console.log(numConst) */
+        
+        listStudent.pop()
+        console.log(listStudent)
+        
+        listStudent.unshift('Rubén')
+        console.log(listStudent)
+        
+        listStudent.shift()
+        console.log(listStudent)
+        
+        listStudent.length = 2
+        console.log(listStudent)
+
+        listStudent.push('Kevin')
+        listStudent.push('Karen')
+        listStudent.push('Cristian')
+        listStudent.push('Francesc')
+        listStudent.push('Gustavo')
+        listStudent.push('Ruben')
+
+        console.log(listStudent)
+
+        for (let j = 0; j < listStudent.length; j++) {
+            console.log(listStudent[j])
+        }
+        
+        console.log(listStudent.sort())
+        console.log(listStudent.reverse())
+        
+        let posicionKaren = listStudent.indexOf('Karen')
+        console.log(posicionKaren)
+        listStudent.splice(posicionKaren, 3)
+        console.log(listStudent)
+
+        // Bucle For
+        /*  for(let i = 1; i <= 10; i++) {
+
+            if (i % 2 == 0) {
+                console.log('Número par: ' + i)
+            } else {
+                console.log('Número impar: ' + i)
+            }
+
+        } */
+
+
+        /*  for (let i = 0; i <= 100; i++) {
+
+            if (i % 3 == 0 && i % 5 == 0) {
+                console.log('Fizz-buzz')
+            } else if (i % 3 == 0) {
+                console.log('Fizz')
+            } else if (i % 5 == 0){
+                console.log('Buzz')
+            } else{
+                console.log(i)
+            }
+
+        } */
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

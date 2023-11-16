@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JuanCarlo Castillo">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Primer número </label>
+    <input type="number" name="num1" id="num1">
+    <br>
+    <label for="num2">Segundo número</label>
+    <input type="number" name="num2" id="num2">
+    <br>
+    <label> Elija un operador:</label>
+    <input type="radio" name="operador" value='suma'> +
+    <input type="radio" name="operador" value='resta'> -
+    <input type="radio" name="operador" value='multiplica'> *
+    <input type="radio" name="operador" value='divide'> /
+
+    <br>
+    <input type="button" value='calcula' onclick="calcularPrecio()">
+
+    <div id="result"></div>
+
+    <p>
+        objetivo: conocer el precio de una chaqueta
+        conducir al usuario
+        Elegir hombre mujer o niños
+        talla xs s m l xl  = precio
+    </p>
+
+    <script src="itacademy.js"></script>
+    <script src="venta.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+
+        let newArray = []
+
+        let objetArray = new Array();
+
+        let listaArray = [
+            'pan', 
+            'refresco', 
+            'pasta', 
+            'arroz'
+        ]
+        function ejemFunction(){
+            console.log()
+        }
+
+        const differentDataType = [ 1, 2, 3, 'juanca', 'Barcelona', false, true, [7, 8, 9], {name: 'js'}, ejemFunction()]
+
+        console.log(differentDataType[0]);
+        console.log('segundo valor dentro de otro array', differentDataType[7][1]);
+
+        console.log(differentDataType.length)
+
+        console.log(differentDataType.toString())
+        
+        differentDataType.pop()
+        console.log(differentDataType)
+
+        differentDataType.push('Este será el último elemento')
+        console.log(differentDataType)
+
+        differentDataType.unshift(0)
+        console.log(differentDataType)
+
+        differentDataType.shift()
+        console.log(differentDataType)
+
+
+        "construir un array de 5 elementos incluir un elemento al final eliminar el primer elemento  "    
+
+        let listaStudents = ['victor', 'lorena', 'oriol', 'cristian', 'aramis']
+
+
+        console.log('length del array', listaStudents.length) // número
+
+        listaStudents[0] = 'Silvia'
+        console.log(listaStudents)
+
+        console.log( listaStudents[listaStudents.length - 1] ) // longitud 5 -1 
+        console.log( listaStudents[4] )
+
+        
+        console.log( listaStudents[listaStudents.length] ) // undefined 
+
+        //  listaStudents[listaStudents.length] = 'Rubén'
+        listaStudents[5] = 'Rubén'
+        console.log(listaStudents.length) // 6
+
+        console.log( listaStudents[listaStudents.length - 1] ) 
+
+        listaStudents.length = 1
+        console.log(listaStudents) // Silvia 
+
+        listaStudents.length = 2
+        console.log(listaStudents) // empty
+
+        // 'Silvia ', undefined , undefined , 'aramis'
+        //     0,           1,       2,          3
+
+        listaStudents[3] = 'Aramis' // longitud = 4
+        console.log(listaStudents) 
+        
+        
+    </script>
+</body>
+</html>
