@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="createHotel" style="background-color: bisque; padding: 10px;">
+        <h2>Create Hotel </h2>
+        <div>
+            <label for="nomHotel">Escriba el nombre de un hotel </label>
+            <input type="text" name="nomHotel" id="nomHotel" required>
+            <small id="valName"></small>
+        </div>
+        <div>
+            <label for="numHabHotel">Escriba el número de habitaciones </label>
+            <input type="number" name="numHabHotel" id="numHabHotel" required>
+            <small id="valHab"></small>
+        </div>
+        <div>
+            <label for="numHabFloor">Escriba el número de Plantas</label>
+            <input type="number" name="numHabFloor" id="numHabFloor" required>
+            <small id="valFloor"></small>
+        </div>
+        <div>
+            <label for="numArea">Escriba el área total</label>
+            <input type="number" name="numArea" id="numArea" required>
+            <small id="valArea"></small>
+        </div>
+        <div style="display: flex; justify-content: center; margin:auto;">
+            <input type="button" id="submitHotel" value="Dar de alta" style="margin:auto; margin-top: 30px;">
+            <input type="button" id="modifiedHotel" value="Modifica los valores" style="margin:auto; margin-top: 30px;">
+        </div>
+    </section>
+
+
+    <section id="deleteHotel" style="background-color:coral; padding: 10px; margin-top: 30px;">
+        <h2>Delete Hotel </h2>
+
+        <div>
+            <label for="nameHotel">Escriba el nombre del hotel que quiere eliminar</label>
+            <input type="text" name="nameHotel" id="nameHotel">
+            <div style="display: flex; justify-content: center; margin-top:30px;">
+                <input type="button" value="Dar de baja" id="eraseHotel">
+            </div>
+            <div>
+                <small id="messageErase" class="message"></small>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background-color: darkkhaki; padding: 10px; margin-top: 30px;">
+        <h2>Read hotel</h2> 
+        <label for="findHotel">Escriba el nombre del hotel que quiere visualizar</label>
+        <input type="text" name="findHotel" id="findHotel">
+        <div style="display: flex; justify-content: center; margin-top:30px;">
+            <input type="button" value="Ver Info" id="findHotelBtn">
+        </div>
+        <div id="result" class="message"></div>
+        <div>
+            <small id="messageRead"  class="message"></small>
+        </div>
+    </section>
+
+
+    <section id="sectionUpdate" style="background-color: royalblue; padding: 10px; margin-top: 30px;">
+        <h2>Update hotel</h2> 
+        <label for="updateHotel">Escriba el nombre del hotel que quiere modificar</label>
+        <input type="text" name="updateHotel" id="updateHotel">
+        <div style="display: flex; justify-content: center; margin-top:30px;">
+            <input type="button" value="Modificar" id="updateHotelBtn">
+        </div>
+        <div id="resultUpdate" class="message"></div>
+        <div>
+            <small id="messageUpdate"  class="message"></small>
+        </div>
+
+    </section>
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
